@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Imprint – GetIt</title>
+  <meta name="description" content="Legal imprint for GetIt." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #ffffff;
+      --surface: #f7f7f5;
+      --border: #e8e8e4;
+      --text-primary: #111110;
+      --text-secondary: #6b6b67;
+      --text-muted: #9e9e9a;
+      --radius: 14px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* NAV */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 5vw;
+      height: 62px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.45rem;
+      color: var(--text-primary);
+      letter-spacing: -0.02em;
+      text-decoration: none;
+    }
+
+    .nav-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-back:hover { color: var(--text-primary); }
+
+    /* PAGE HEADER */
+    .page-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 56px 5vw 48px;
+    }
+
+    .page-header-inner {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .page-label {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+
+    .page-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 14px;
+    }
+
+    .page-meta {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    /* CONTENT */
+    .content {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 56px 5vw 80px;
+    }
+
+    .content section {
+      margin-bottom: 44px;
+      padding-bottom: 44px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .content section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.35rem;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+      margin-bottom: 14px;
+    }
+
+    p {
+      font-size: 0.975rem;
+      color: var(--text-secondary);
+      margin-bottom: 10px;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    a.inline-link {
+      color: var(--text-primary);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .info-block {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 26px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .info-block p {
+      margin-bottom: 0;
+      font-size: 0.95rem;
+    }
+
+    .info-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 36px 5vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.2rem;
+      color: var(--text-primary);
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--text-primary); }
+
+    .footer-copy {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      width: 100%;
+      text-align: center;
+      margin-top: 4px;
+    }
+
+    @media (max-width: 600px) {
+      footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">GetIt</a>
+    <a href="index.html" class="nav-back">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+      Back to home
+    </a>
+  </nav>
+
+  <div class="page-header">
+    <div class="page-header-inner">
+      <p class="page-label">Legal</p>
+      <h1 class="page-title">Imprint</h1>
+      <p class="page-meta">Legal disclosure pursuant to German law &nbsp;·&nbsp; GetIt</p>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <section>
+      <h2>Service Provider</h2>
+      <div class="info-block">
+        <p class="info-label">Contact details</p>
+        <p><strong>GetIt</strong></p>
+        <p>Luka Sebastian Schmitz</p>
+        <p>Hamburg, Germany</p>
+        <p style="margin-top: 8px;">
+          <a href="mailto:getit.network.co@gmail.com" class="inline-link">getit.network.co@gmail.com</a>
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Responsible for Content</h2>
+      <p>Responsible for content according to § 55 Abs. 2 RStV:</p>
+      <div class="info-block">
+        <p><strong>Luka Sebastian Schmitz</strong></p>
+        <p>Hamburg, Germany</p> 
+        <p>CEO of GetIt</p>
+        <p>Co-Founder</p>
+        <p>Founder & Visionary</p>
+
+
+
+
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <a href="index.html" class="footer-logo">GetIt</a>
+    <div class="footer-links">
+      <a href="mailto:getit.network.co@gmail.com">getit.network.co@gmail.com</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+    <p class="footer-copy">© 2025 GetIt. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
