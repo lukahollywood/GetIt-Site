@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – GetIt</title>
+  <meta name="description" content="GetIt Privacy Policy — how we collect, use, and protect your data." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #ffffff;
+      --surface: #f7f7f5;
+      --border: #e8e8e4;
+      --text-primary: #111110;
+      --text-secondary: #6b6b67;
+      --text-muted: #9e9e9a;
+      --green: #2d6a4f;
+      --green-light: #eaf3ee;
+      --radius: 14px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* NAV */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 5vw;
+      height: 62px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.45rem;
+      color: var(--text-primary);
+      letter-spacing: -0.02em;
+      text-decoration: none;
+    }
+
+    .nav-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-back:hover { color: var(--text-primary); }
+
+    /* PAGE HEADER */
+    .page-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 56px 5vw 48px;
+    }
+
+    .page-header-inner {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .page-label {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+
+    .page-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 14px;
+    }
+
+    .page-meta {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    /* CONTENT */
+    .content {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 56px 5vw 80px;
+    }
+
+    .content section {
+      margin-bottom: 44px;
+      padding-bottom: 44px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .content section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.35rem;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+      margin-bottom: 14px;
+    }
+
+    p {
+      font-size: 0.975rem;
+      color: var(--text-secondary);
+      margin-bottom: 14px;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      margin: 10px 0 14px 0;
+      padding-left: 20px;
+    }
+
+    ul li {
+      font-size: 0.975rem;
+      color: var(--text-secondary);
+      margin-bottom: 6px;
+    }
+
+    a.inline-link {
+      color: var(--text-primary);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .highlight-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      margin-top: 16px;
+    }
+
+    .highlight-box p {
+      font-size: 0.9rem;
+      margin-bottom: 0;
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 36px 5vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.2rem;
+      color: var(--text-primary);
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--text-primary); }
+
+    .footer-copy {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      width: 100%;
+      text-align: center;
+      margin-top: 4px;
+    }
+
+    @media (max-width: 600px) {
+      footer { flex-direction: column; align-items: center; text-align: center; }
+      .footer-links { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">GetIt</a>
+    <a href="index.html" class="nav-back">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+      Back to home
+    </a>
+  </nav>
+
+  <div class="page-header">
+    <div class="page-header-inner">
+      <p class="page-label">Legal</p>
+      <h1 class="page-title">Privacy Policy</h1>
+      <p class="page-meta">Last updated: June 2025 &nbsp;·&nbsp; GetIt</p>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <section>
+      <h2>Overview</h2>
+      <p>GetIt ("we", "our", or "us") is committed to protecting your personal information. This Privacy Policy explains what data we collect, how we use it, and what rights you have regarding your information when you use our platform.</p>
+      <p>By using GetIt, you agree to the collection and use of information in accordance with this policy.</p>
+    </section>
+
+    <section>
+      <h2>Information We Collect</h2>
+      <p>We collect information you provide directly to us when you create an account, post a job, or communicate through the platform:</p>
+      <ul>
+        <li><strong>Account information</strong> — your name, email address, and profile details.</li>
+        <li><strong>Job listings</strong> — descriptions, location, timing, and any details you include when posting a task.</li>
+        <li><strong>Messages</strong> — communications sent between users through GetIt's in-app chat.</li>
+        <li><strong>Payment information</strong> — billing details processed securely via Stripe. We do not store full card numbers on our servers.</li>
+        <li><strong>Location data</strong> — approximate location used to match you with nearby helpers or jobs.</li>
+        <li><strong>Device and usage data</strong> — browser type, IP address, pages visited, and interactions with the platform, used to improve performance and security.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>How We Use Your Information</h2>
+      <p>We use the information we collect to:</p>
+      <ul>
+        <li>Provide, operate, and improve the GetIt platform.</li>
+        <li>Match users with relevant nearby helpers or jobs.</li>
+        <li>Process payments and send transaction confirmations.</li>
+        <li>Enable communication between users through our in-app chat.</li>
+        <li>Send service-related notifications and updates.</li>
+        <li>Detect and prevent fraud, abuse, or other harmful activity.</li>
+        <li>Comply with applicable legal obligations.</li>
+      </ul>
+      <p>We do not sell your personal data to third parties.</p>
+    </section>
+
+    <section>
+      <h2>Payments &amp; Stripe</h2>
+      <p>All payment processing on GetIt is handled by <strong>Stripe</strong>, a third-party payment provider. When you make or receive a payment, your financial information is transmitted directly to Stripe and governed by their privacy policy.</p>
+      <div class="highlight-box">
+        <p>GetIt does not store your full credit card number, CVV, or bank account details. Stripe processes and encrypts all payment data on our behalf. You can review Stripe's privacy practices at <a href="https://stripe.com/privacy" class="inline-link" target="_blank">stripe.com/privacy</a>.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Data Sharing</h2>
+      <p>We may share your information with:</p>
+      <ul>
+        <li><strong>Other users</strong> — your name and job details are visible to other users as needed to facilitate a task.</li>
+        <li><strong>Service providers</strong> — third-party tools that help us operate the platform (e.g., Stripe for payments, hosting providers).</li>
+        <li><strong>Legal authorities</strong> — when required by law or to protect the rights and safety of our users.</li>
+      </ul>
+      <p>We do not share your information with advertisers or sell it to data brokers.</p>
+    </section>
+
+    <section>
+      <h2>Data Retention</h2>
+      <p>We retain your personal data for as long as your account is active or as needed to provide you with our services. You may request deletion of your account and associated data at any time by contacting us at <a href="mailto:getit.app.co@gmail.com" class="inline-link">getit.app.co@gmail.com</a>.</p>
+    </section>
+
+    <section>
+      <h2>Your Rights</h2>
+      <p>Depending on your location, you may have the right to:</p>
+      <ul>
+        <li>Access the personal data we hold about you.</li>
+        <li>Request correction of inaccurate data.</li>
+        <li>Request deletion of your personal data.</li>
+        <li>Object to or restrict certain types of processing.</li>
+        <li>Data portability — receive your data in a structured format.</li>
+      </ul>
+      <p>To exercise any of these rights, contact us at <a href="mailto:getit.app.co@gmail.com" class="inline-link">getit.app.co@gmail.com</a>.</p>
+    </section>
+
+    <section>
+      <h2>Cookies</h2>
+      <p>GetIt uses cookies and similar tracking technologies to maintain session state, remember preferences, and analyze usage. You can control cookie settings through your browser, though some features of the platform may not function correctly if cookies are disabled.</p>
+    </section>
+
+    <section>
+      <h2>Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. When we do, we will revise the date at the top of this page. Continued use of GetIt after changes are posted constitutes your acceptance of the updated policy.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>If you have any questions about this Privacy Policy, please contact us at:<br>
+      <a href="mailto:getit.app.co@gmail.com" class="inline-link">getit.app.co@gmail.com</a></p>
+    </section>
+
+  </div>
+
+  <footer>
+    <a href="index.html" class="footer-logo">GetIt</a>
+    <div class="footer-links">
+      <a href="mailto:getit.app.co@gmail.com">getit.app.co@gmail.com</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+    <p class="footer-copy">© 2025 GetIt. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
